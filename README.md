@@ -1,6 +1,6 @@
 # Reading Improver
 
-The program aims to improve the reading skill. The user may type a text or read it from .txt file and the program will display the text with different display speed.
+The program aims to improve the reading skill. The user may type a text or read it from `.txt` file and the program will display the text with different display speed.
 
 If you want to do further improvement to this project, it would be easier to import the project using Eclipse IDE.
 
