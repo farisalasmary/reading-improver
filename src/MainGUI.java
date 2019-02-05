@@ -38,7 +38,7 @@ public class MainGUI extends JFrame implements ActionListener{
 		this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		this.setLayout(null);
 		this.setLocationRelativeTo(null);
-		this.setResizable(false);
+		this.setResizable(true);
 		
 		this.addWindowListener(new WindowAdapter(){public void windowClosing(WindowEvent e){exit();}});
 
@@ -120,13 +120,13 @@ public class MainGUI extends JFrame implements ActionListener{
 	
 	private void constructPanels(){
 		this.textPanel = new JPanel(new FlowLayout());
-		this.textPanel.setBounds(0, 0, this.getSize().width, this.getSize().height - 60);
+		this.textPanel.setBounds(0, 0, this.getSize().width, this.getSize().height - 80);
 		this.textPanel.setBorder(BorderFactory.createTitledBorder("The Text"));
 		this.add(textPanel);
 	}
 	
 	private void constructTextArea(){
-		this.theText = new JTextArea(20, 45);
+		this.theText = new JTextArea(18, 40);
 		this.textAreaScrollable = new JScrollPane(theText);
 		this.theText.setWrapStyleWord(true);
 		this.theText.setLineWrap(true);
